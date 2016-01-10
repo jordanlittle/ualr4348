@@ -20,22 +20,22 @@
 	<body>
 		
 		<header class="site-header">
-			<div class="content">
+			<div class="manifest">
 				<h1>4348 Web Design</h1>
 				<h2>Jordan Little, Instructor <span>Spring 2016</span></h2>
 				<nav>
-					<a href="#schedule">Schedule</a>
-					<a href="#downloads">Downloads</a>
-					<a href="#resources">Resources</a>
+					<span><a href="#sessions">Sessions</a></span>
+					<span><a href="#class_info">Class Info</a></span>
+					<span><a href="#login">Log In</a></span>
 				</nav>
 				<div class="blocks">
-					<svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="b_1">
+					<svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="yellow_block">
 						<rect width="40" height="40"/>
 					</svg>
-					<svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="b_2">
+					<svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="purple_block">
 						<rect width="40" height="40"/>
 					</svg>
-					<svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="b_3">
+					<svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" id="teal_block">
 						<rect width="40" height="40"/>
 					</svg>
 					<svg x="0px" y="0px" width="32px" height="6px" viewBox="0 0 32 6" style="enable-background:new 0 0 32 6;" xml:space="preserve" id="shadow">
@@ -46,45 +46,575 @@
 		</header>
 
 		<div class="content">
-			<h2 id="schedule">Schedule</h2>
-			<p>This course will be broken up into five, three-week segments. Each new segment introduces a new client or scenario with its own unique difficulties and challenges.</p>
+			<form action="" method="post">
+				<fieldset>
+					<label for="firstname">First Name</label>
+					<input type="text" class="form-field" name="firstname" id="firstname" placeholder="John" />
+				</fieldset>
+				<fieldset>
+					<label for="lastname">Last Name</label>
+					<input type="text" class="form-field" name="lastname" id="lastname" placeholder="Stindor" />
+				</fieldset>
+				<fieldset>
+					<label for="email">Email Address</label>
+					<input type="email" class="form-field" name="email" id="email" placeholder="jstind@mymail.com" />
+				</fieldset>
+				<fieldset>
+					<label for="password">Password</label>
+					<input type="password" class="form-field" name="password" id="password" />
+				</fieldset>
+				<fieldset>
+					<input type="submit" class="form-submit" value="Log In" />
+				</fieldset>
+			</form>
 		</div>
 		<section>
-			<div class="week">
+
+			<div class="content">
+				<h2 id="sessions" class="site-section-heading">Sessions</h2>
+			</div>
+			
+			<div class="session" id="s_1">
 				<div class="content">
-					<header class="week-header">
-						<h2 class="week-header--heading">
-							<span>Week 1</span>
-							Welcome to 4348 Web Design
+					<header class="session--header">
+						<h2 class="session--title">
+							<span class="session--id">Session 1</span>
+							Welcome to the Internet
 						</h2>
+						<a href="#" class="session--close">&times;</a>
 					</header>
-					<article class="week-guts">
-						<div class="week-resources">
-							<div class="week-overview">
-								<h4 class="week-resources-heading">Overview</h4>
+					<article class="session--guts">
+						<div class="session--resources">
+							<div class="session--overview">
+								<h4 class="session--resources-heading">Overview</h4>
+								<p>At city success more kind temple I extension the not western supposedly ruining present office. Sentences ducks. Example, project does I that is unmoved the volume still home, can admittance, to bad floundering phase she the school steadily and lay escape, about concept. Years, subjective there school. It as fur fall been and the amidst very six there from so, way considerations, tone differences to onto activity of from certainly a price far floundering pointing what's be frequencies agency for serving his may the boss packed, than up it and policy hours.</p>
 							</div>
-							<div class="week-links">
-								<h4 class="week-resources-heading">Links</h4>
+							<div class="session--links">
+								<h4 class="session--resources-heading">Links</h4>
+								<ul>
+									<li><a href="#">Learn HTML &amp; CSS</a></li>
+									<li><a href="#">Another Great Resource Site</a></li>
+									<li><a href="#">The Basics of Selectors in CSS</a></li>
+									<li><a href="#">Everything You Need to Know About Specificity</a></li>
+								</ul>
 							</div>
-							<div class="week-downloads">
-								<h4 class="week-resources-heading">Downloads</h4>
+							<div class="session--downloads">
+								<h4 class="session--resources-heading">Downloads</h4>
+								<ul>
+									<li><a href="#">Learn HTML &amp; CSS</a></li>
+									<li><a href="#">Another Great Resource Site</a></li>
+									<li><a href="#">The Basics of Selectors in CSS</a></li>
+									<li><a href="#">Everything You Need to Know About Specificity</a></li>
+								</ul>
 							</div>
 						</div>
+						<h3 class="challenges-heading">Challenges for this session</h3>
 						<div class="challenges">
 							<div class="challenge">
-								<h3 class="challenge-heading">Hacking Baby Steps <span>L1:1</span></h3>
+								<header class="challenge--header">
+									<h3 class="challenge--title">Hacking Baby Steps</h3>
+									<span class="challenge--vanity-id">1-1</span>
+								</header>
+								<div class="challenge--guts">
+									<p>Using your operating system’s command line interface, find the IP address for Google.com. Take a screenshot of you doing so and post it in your Dropbox folder under 1-1.</p>
+								</div>
+								<footer class="challenge--footer">
+									<div class="challenge--tracks">
+										<span class="xp-label dev">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 30" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+												<g>
+													<path class="st0" d="M25.3,0.1c-0.5-0.3-1.1-0.1-1.4,0.4L8.3,28.4c-0.3,0.5-0.1,1.2,0.4,1.5C8.8,29.9,9,30,9.2,30
+														c0.4,0,0.7-0.2,0.9-0.5L25.7,1.6C26,1.1,25.8,0.4,25.3,0.1z"/>
+													<path class="st0" d="M7.5,7.4C7,7,6.4,7.1,6,7.5l-5.7,6.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0c0,0.1,0,0.2-0.1,0.3
+														c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0.1,0.3c0,0,0,0,0,0c0,0.1,0.1,0.2,0.2,0.3L6,21.5c0.2,0.2,0.5,0.3,0.8,0.3
+														c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1.1,0-1.5l-5.1-5.5l5.1-5.5C7.9,8.5,7.9,7.8,7.5,7.4z"/>
+													<path class="st0" d="M34,14.3c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.2-0.3L28,7.5c-0.4-0.4-1-0.4-1.5,0
+														c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.5L26.5,20c-0.4,0.4-0.4,1.1,0,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.8-0.3l5.7-6.3
+														c0.1-0.1,0.1-0.2,0.2-0.3c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0-0.1,0-0.1C34,14.4,34,14.4,34,14.3z"/>
+												</g>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label vis">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 35" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<defs>
+											</defs>
+											<path class="st0" d="M33.3,5.5L16.2,22.7c-0.1,0.1-0.2,0.1-0.3,0.2c0.5,1.3,0.7,2.9,0,4.4C13.3,33,0,31.9,0,31.9
+												c6.8-3.4,0.7-7.7,4.5-11.4c2.4-2.3,4.8-2.5,6.6-2.2c0.1-0.2,0.2-0.3,0.3-0.5l3.2-3.2v0l1.6-1.6h0L28.5,0.7c0.9-0.9,2.3-0.9,3.2,0
+												l1.6,1.6C34.2,3.2,34.2,4.6,33.3,5.5z M11.4,21.1c-0.4-0.4-0.5-0.8-0.6-1.3c-1-0.1-2.4,0.2-4,1.9c-2.9,2.9,0,5.7-2.3,8
+												c0,0,7.4,0.3,9.1-2.3c1-1.5,0.9-2.9,0.5-4.1c-0.4-0.1-0.8-0.3-1.1-0.6L11.4,21.1z M13.8,18.7c-0.4,0.4-0.4,1.2,0,1.6
+												c0.4,0.4,1.2,0.4,1.6,0l2.4-2.4l-1.6-1.6L13.8,18.7z M30.9,3.1c-0.4-0.4-1.2-0.4-1.6,0L17.8,14.7l1.6,1.6L30.9,4.7
+												C31.4,4.2,31.4,3.5,30.9,3.1z"/>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label int">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 28 34" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<path class="int-path" d="M27.2,31H0.8c-1.5-2.3-0.9-7,0.6-8.5c0.7-0.7,5.9-2.1,8.4-2.8c-2.6-2.1-4.2-6.1-4.2-9.8C5.6,4.4,7.1,0,14,0
+												c6.9,0,8.4,4.4,8.4,9.9c0,3.7-1.6,7.7-4.2,9.8c2.4,0.6,7.7,2.1,8.4,2.8C28,24,28.6,28.7,27.2,31z M25.4,24.1c-1-0.5-5.1-1.7-8.6-2.6
+												v-3.1c2.3-1.7,3.7-5.2,3.7-8.5c0-4.4-1.1-8-6.5-8s-6.5,3.6-6.5,8c0,3.3,1.4,6.9,3.7,8.5v3.1c-3.5,0.9-7.6,2-8.6,2.6
+												c-0.6,0.8-1.1,3.4-0.8,5h24.3C26.5,27.5,26,24.9,25.4,24.1z"/>
+											</svg>
+											+10
+										</span>
+									</div>
+									<div class="challenge--actions">
+										<button class="challenge--toggle-complete">&check;</button>
+									</div>
+								</footer>
+							</div>
+							<div class="challenge">
+								<header class="challenge--header">
+									<h3 class="challenge--title">Hacking Baby Steps</h3>
+									<span class="challenge--vanity-id">1-1</span>
+								</header>
+								<div class="challenge--guts">
+									<p>Using your operating system’s command line interface, find the IP address for Google.com. Take a screenshot of you doing so and post it in your Dropbox folder under 1-1.</p>
+								</div>
+								<footer class="challenge--footer">
+									<div class="challenge--tracks">
+										<span class="xp-label dev">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 30" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+												<g>
+													<path class="st0" d="M25.3,0.1c-0.5-0.3-1.1-0.1-1.4,0.4L8.3,28.4c-0.3,0.5-0.1,1.2,0.4,1.5C8.8,29.9,9,30,9.2,30
+														c0.4,0,0.7-0.2,0.9-0.5L25.7,1.6C26,1.1,25.8,0.4,25.3,0.1z"/>
+													<path class="st0" d="M7.5,7.4C7,7,6.4,7.1,6,7.5l-5.7,6.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0c0,0.1,0,0.2-0.1,0.3
+														c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0.1,0.3c0,0,0,0,0,0c0,0.1,0.1,0.2,0.2,0.3L6,21.5c0.2,0.2,0.5,0.3,0.8,0.3
+														c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1.1,0-1.5l-5.1-5.5l5.1-5.5C7.9,8.5,7.9,7.8,7.5,7.4z"/>
+													<path class="st0" d="M34,14.3c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.2-0.3L28,7.5c-0.4-0.4-1-0.4-1.5,0
+														c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.5L26.5,20c-0.4,0.4-0.4,1.1,0,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.8-0.3l5.7-6.3
+														c0.1-0.1,0.1-0.2,0.2-0.3c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0-0.1,0-0.1C34,14.4,34,14.4,34,14.3z"/>
+												</g>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label vis">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 35" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<defs>
+											</defs>
+											<path class="st0" d="M33.3,5.5L16.2,22.7c-0.1,0.1-0.2,0.1-0.3,0.2c0.5,1.3,0.7,2.9,0,4.4C13.3,33,0,31.9,0,31.9
+												c6.8-3.4,0.7-7.7,4.5-11.4c2.4-2.3,4.8-2.5,6.6-2.2c0.1-0.2,0.2-0.3,0.3-0.5l3.2-3.2v0l1.6-1.6h0L28.5,0.7c0.9-0.9,2.3-0.9,3.2,0
+												l1.6,1.6C34.2,3.2,34.2,4.6,33.3,5.5z M11.4,21.1c-0.4-0.4-0.5-0.8-0.6-1.3c-1-0.1-2.4,0.2-4,1.9c-2.9,2.9,0,5.7-2.3,8
+												c0,0,7.4,0.3,9.1-2.3c1-1.5,0.9-2.9,0.5-4.1c-0.4-0.1-0.8-0.3-1.1-0.6L11.4,21.1z M13.8,18.7c-0.4,0.4-0.4,1.2,0,1.6
+												c0.4,0.4,1.2,0.4,1.6,0l2.4-2.4l-1.6-1.6L13.8,18.7z M30.9,3.1c-0.4-0.4-1.2-0.4-1.6,0L17.8,14.7l1.6,1.6L30.9,4.7
+												C31.4,4.2,31.4,3.5,30.9,3.1z"/>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label int">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 28 34" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<path class="int-path" d="M27.2,31H0.8c-1.5-2.3-0.9-7,0.6-8.5c0.7-0.7,5.9-2.1,8.4-2.8c-2.6-2.1-4.2-6.1-4.2-9.8C5.6,4.4,7.1,0,14,0
+												c6.9,0,8.4,4.4,8.4,9.9c0,3.7-1.6,7.7-4.2,9.8c2.4,0.6,7.7,2.1,8.4,2.8C28,24,28.6,28.7,27.2,31z M25.4,24.1c-1-0.5-5.1-1.7-8.6-2.6
+												v-3.1c2.3-1.7,3.7-5.2,3.7-8.5c0-4.4-1.1-8-6.5-8s-6.5,3.6-6.5,8c0,3.3,1.4,6.9,3.7,8.5v3.1c-3.5,0.9-7.6,2-8.6,2.6
+												c-0.6,0.8-1.1,3.4-0.8,5h24.3C26.5,27.5,26,24.9,25.4,24.1z"/>
+											</svg>
+											+10
+										</span>
+									</div>
+									<div class="challenge--actions">
+										<button class="challenge--toggle-complete">&check;</button>
+									</div>
+								</footer>
+							</div>
+							<div class="challenge">
+								<header class="challenge--header">
+									<h3 class="challenge--title">Hacking Baby Steps</h3>
+									<span class="challenge--vanity-id">1-1</span>
+								</header>
+								<div class="challenge--guts">
+									<p>Using your operating system’s command line interface, find the IP address for Google.com. Take a screenshot of you doing so and post it in your Dropbox folder under 1-1.</p>
+								</div>
+								<footer class="challenge--footer">
+									<div class="challenge--tracks">
+										<span class="xp-label dev">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 30" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+												<g>
+													<path class="st0" d="M25.3,0.1c-0.5-0.3-1.1-0.1-1.4,0.4L8.3,28.4c-0.3,0.5-0.1,1.2,0.4,1.5C8.8,29.9,9,30,9.2,30
+														c0.4,0,0.7-0.2,0.9-0.5L25.7,1.6C26,1.1,25.8,0.4,25.3,0.1z"/>
+													<path class="st0" d="M7.5,7.4C7,7,6.4,7.1,6,7.5l-5.7,6.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0c0,0.1,0,0.2-0.1,0.3
+														c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0.1,0.3c0,0,0,0,0,0c0,0.1,0.1,0.2,0.2,0.3L6,21.5c0.2,0.2,0.5,0.3,0.8,0.3
+														c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1.1,0-1.5l-5.1-5.5l5.1-5.5C7.9,8.5,7.9,7.8,7.5,7.4z"/>
+													<path class="st0" d="M34,14.3c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.2-0.3L28,7.5c-0.4-0.4-1-0.4-1.5,0
+														c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.5L26.5,20c-0.4,0.4-0.4,1.1,0,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.8-0.3l5.7-6.3
+														c0.1-0.1,0.1-0.2,0.2-0.3c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0-0.1,0-0.1C34,14.4,34,14.4,34,14.3z"/>
+												</g>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label vis">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 35" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<defs>
+											</defs>
+											<path class="st0" d="M33.3,5.5L16.2,22.7c-0.1,0.1-0.2,0.1-0.3,0.2c0.5,1.3,0.7,2.9,0,4.4C13.3,33,0,31.9,0,31.9
+												c6.8-3.4,0.7-7.7,4.5-11.4c2.4-2.3,4.8-2.5,6.6-2.2c0.1-0.2,0.2-0.3,0.3-0.5l3.2-3.2v0l1.6-1.6h0L28.5,0.7c0.9-0.9,2.3-0.9,3.2,0
+												l1.6,1.6C34.2,3.2,34.2,4.6,33.3,5.5z M11.4,21.1c-0.4-0.4-0.5-0.8-0.6-1.3c-1-0.1-2.4,0.2-4,1.9c-2.9,2.9,0,5.7-2.3,8
+												c0,0,7.4,0.3,9.1-2.3c1-1.5,0.9-2.9,0.5-4.1c-0.4-0.1-0.8-0.3-1.1-0.6L11.4,21.1z M13.8,18.7c-0.4,0.4-0.4,1.2,0,1.6
+												c0.4,0.4,1.2,0.4,1.6,0l2.4-2.4l-1.6-1.6L13.8,18.7z M30.9,3.1c-0.4-0.4-1.2-0.4-1.6,0L17.8,14.7l1.6,1.6L30.9,4.7
+												C31.4,4.2,31.4,3.5,30.9,3.1z"/>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label int">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 28 34" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<path class="int-path" d="M27.2,31H0.8c-1.5-2.3-0.9-7,0.6-8.5c0.7-0.7,5.9-2.1,8.4-2.8c-2.6-2.1-4.2-6.1-4.2-9.8C5.6,4.4,7.1,0,14,0
+												c6.9,0,8.4,4.4,8.4,9.9c0,3.7-1.6,7.7-4.2,9.8c2.4,0.6,7.7,2.1,8.4,2.8C28,24,28.6,28.7,27.2,31z M25.4,24.1c-1-0.5-5.1-1.7-8.6-2.6
+												v-3.1c2.3-1.7,3.7-5.2,3.7-8.5c0-4.4-1.1-8-6.5-8s-6.5,3.6-6.5,8c0,3.3,1.4,6.9,3.7,8.5v3.1c-3.5,0.9-7.6,2-8.6,2.6
+												c-0.6,0.8-1.1,3.4-0.8,5h24.3C26.5,27.5,26,24.9,25.4,24.1z"/>
+											</svg>
+											+10
+										</span>
+									</div>
+									<div class="challenge--actions">
+										<button class="challenge--toggle-complete">&check;</button>
+									</div>
+								</footer>
+							</div>
+							<div class="challenge">
+								<header class="challenge--header">
+									<h3 class="challenge--title">Hacking Baby Steps</h3>
+									<span class="challenge--vanity-id">1-1</span>
+								</header>
+								<div class="challenge--guts">
+									<p>Using your operating system’s command line interface, find the IP address for Google.com. Take a screenshot of you doing so and post it in your Dropbox folder under 1-1.</p>
+								</div>
+								<footer class="challenge--footer">
+									<div class="challenge--tracks">
+										<span class="xp-label dev">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 30" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+												<g>
+													<path class="st0" d="M25.3,0.1c-0.5-0.3-1.1-0.1-1.4,0.4L8.3,28.4c-0.3,0.5-0.1,1.2,0.4,1.5C8.8,29.9,9,30,9.2,30
+														c0.4,0,0.7-0.2,0.9-0.5L25.7,1.6C26,1.1,25.8,0.4,25.3,0.1z"/>
+													<path class="st0" d="M7.5,7.4C7,7,6.4,7.1,6,7.5l-5.7,6.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0c0,0.1,0,0.2-0.1,0.3
+														c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0.1,0.3c0,0,0,0,0,0c0,0.1,0.1,0.2,0.2,0.3L6,21.5c0.2,0.2,0.5,0.3,0.8,0.3
+														c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1.1,0-1.5l-5.1-5.5l5.1-5.5C7.9,8.5,7.9,7.8,7.5,7.4z"/>
+													<path class="st0" d="M34,14.3c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.2-0.3L28,7.5c-0.4-0.4-1-0.4-1.5,0
+														c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.5L26.5,20c-0.4,0.4-0.4,1.1,0,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.8-0.3l5.7-6.3
+														c0.1-0.1,0.1-0.2,0.2-0.3c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0-0.1,0-0.1C34,14.4,34,14.4,34,14.3z"/>
+												</g>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label vis">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 35" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<defs>
+											</defs>
+											<path class="st0" d="M33.3,5.5L16.2,22.7c-0.1,0.1-0.2,0.1-0.3,0.2c0.5,1.3,0.7,2.9,0,4.4C13.3,33,0,31.9,0,31.9
+												c6.8-3.4,0.7-7.7,4.5-11.4c2.4-2.3,4.8-2.5,6.6-2.2c0.1-0.2,0.2-0.3,0.3-0.5l3.2-3.2v0l1.6-1.6h0L28.5,0.7c0.9-0.9,2.3-0.9,3.2,0
+												l1.6,1.6C34.2,3.2,34.2,4.6,33.3,5.5z M11.4,21.1c-0.4-0.4-0.5-0.8-0.6-1.3c-1-0.1-2.4,0.2-4,1.9c-2.9,2.9,0,5.7-2.3,8
+												c0,0,7.4,0.3,9.1-2.3c1-1.5,0.9-2.9,0.5-4.1c-0.4-0.1-0.8-0.3-1.1-0.6L11.4,21.1z M13.8,18.7c-0.4,0.4-0.4,1.2,0,1.6
+												c0.4,0.4,1.2,0.4,1.6,0l2.4-2.4l-1.6-1.6L13.8,18.7z M30.9,3.1c-0.4-0.4-1.2-0.4-1.6,0L17.8,14.7l1.6,1.6L30.9,4.7
+												C31.4,4.2,31.4,3.5,30.9,3.1z"/>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label int">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 28 34" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<path class="int-path" d="M27.2,31H0.8c-1.5-2.3-0.9-7,0.6-8.5c0.7-0.7,5.9-2.1,8.4-2.8c-2.6-2.1-4.2-6.1-4.2-9.8C5.6,4.4,7.1,0,14,0
+												c6.9,0,8.4,4.4,8.4,9.9c0,3.7-1.6,7.7-4.2,9.8c2.4,0.6,7.7,2.1,8.4,2.8C28,24,28.6,28.7,27.2,31z M25.4,24.1c-1-0.5-5.1-1.7-8.6-2.6
+												v-3.1c2.3-1.7,3.7-5.2,3.7-8.5c0-4.4-1.1-8-6.5-8s-6.5,3.6-6.5,8c0,3.3,1.4,6.9,3.7,8.5v3.1c-3.5,0.9-7.6,2-8.6,2.6
+												c-0.6,0.8-1.1,3.4-0.8,5h24.3C26.5,27.5,26,24.9,25.4,24.1z"/>
+											</svg>
+											+10
+										</span>
+									</div>
+									<div class="challenge--actions">
+										<button class="challenge--toggle-complete">&check;</button>
+									</div>
+								</footer>
+							</div>
+							<div class="challenge">
+								<header class="challenge--header">
+									<h3 class="challenge--title">Hacking Baby Steps</h3>
+									<span class="challenge--vanity-id">1-1</span>
+								</header>
+								<div class="challenge--guts">
+									<p>Using your operating system’s command line interface, find the IP address for Google.com. Take a screenshot of you doing so and post it in your Dropbox folder under 1-1.</p>
+								</div>
+								<footer class="challenge--footer">
+									<div class="challenge--tracks">
+										<span class="xp-label dev">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 30" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+												<g>
+													<path class="st0" d="M25.3,0.1c-0.5-0.3-1.1-0.1-1.4,0.4L8.3,28.4c-0.3,0.5-0.1,1.2,0.4,1.5C8.8,29.9,9,30,9.2,30
+														c0.4,0,0.7-0.2,0.9-0.5L25.7,1.6C26,1.1,25.8,0.4,25.3,0.1z"/>
+													<path class="st0" d="M7.5,7.4C7,7,6.4,7.1,6,7.5l-5.7,6.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0c0,0.1,0,0.2-0.1,0.3
+														c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0.1,0.3c0,0,0,0,0,0c0,0.1,0.1,0.2,0.2,0.3L6,21.5c0.2,0.2,0.5,0.3,0.8,0.3
+														c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1.1,0-1.5l-5.1-5.5l5.1-5.5C7.9,8.5,7.9,7.8,7.5,7.4z"/>
+													<path class="st0" d="M34,14.3c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.2-0.3L28,7.5c-0.4-0.4-1-0.4-1.5,0
+														c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.5L26.5,20c-0.4,0.4-0.4,1.1,0,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.8-0.3l5.7-6.3
+														c0.1-0.1,0.1-0.2,0.2-0.3c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0-0.1,0-0.1C34,14.4,34,14.4,34,14.3z"/>
+												</g>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label vis">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 35" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<defs>
+											</defs>
+											<path class="st0" d="M33.3,5.5L16.2,22.7c-0.1,0.1-0.2,0.1-0.3,0.2c0.5,1.3,0.7,2.9,0,4.4C13.3,33,0,31.9,0,31.9
+												c6.8-3.4,0.7-7.7,4.5-11.4c2.4-2.3,4.8-2.5,6.6-2.2c0.1-0.2,0.2-0.3,0.3-0.5l3.2-3.2v0l1.6-1.6h0L28.5,0.7c0.9-0.9,2.3-0.9,3.2,0
+												l1.6,1.6C34.2,3.2,34.2,4.6,33.3,5.5z M11.4,21.1c-0.4-0.4-0.5-0.8-0.6-1.3c-1-0.1-2.4,0.2-4,1.9c-2.9,2.9,0,5.7-2.3,8
+												c0,0,7.4,0.3,9.1-2.3c1-1.5,0.9-2.9,0.5-4.1c-0.4-0.1-0.8-0.3-1.1-0.6L11.4,21.1z M13.8,18.7c-0.4,0.4-0.4,1.2,0,1.6
+												c0.4,0.4,1.2,0.4,1.6,0l2.4-2.4l-1.6-1.6L13.8,18.7z M30.9,3.1c-0.4-0.4-1.2-0.4-1.6,0L17.8,14.7l1.6,1.6L30.9,4.7
+												C31.4,4.2,31.4,3.5,30.9,3.1z"/>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label int">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 28 34" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<path class="int-path" d="M27.2,31H0.8c-1.5-2.3-0.9-7,0.6-8.5c0.7-0.7,5.9-2.1,8.4-2.8c-2.6-2.1-4.2-6.1-4.2-9.8C5.6,4.4,7.1,0,14,0
+												c6.9,0,8.4,4.4,8.4,9.9c0,3.7-1.6,7.7-4.2,9.8c2.4,0.6,7.7,2.1,8.4,2.8C28,24,28.6,28.7,27.2,31z M25.4,24.1c-1-0.5-5.1-1.7-8.6-2.6
+												v-3.1c2.3-1.7,3.7-5.2,3.7-8.5c0-4.4-1.1-8-6.5-8s-6.5,3.6-6.5,8c0,3.3,1.4,6.9,3.7,8.5v3.1c-3.5,0.9-7.6,2-8.6,2.6
+												c-0.6,0.8-1.1,3.4-0.8,5h24.3C26.5,27.5,26,24.9,25.4,24.1z"/>
+											</svg>
+											+10
+										</span>
+									</div>
+									<div class="challenge--actions">
+										<button class="challenge--toggle-complete">&check;</button>
+									</div>
+								</footer>
+							</div>
+							<div class="challenge">
+								<header class="challenge--header">
+									<h3 class="challenge--title">Hacking Baby Steps</h3>
+									<span class="challenge--vanity-id">1-1</span>
+								</header>
+								<div class="challenge--guts">
+									<p>Using your operating system’s command line interface, find the IP address for Google.com. Take a screenshot of you doing so and post it in your Dropbox folder under 1-1.</p>
+								</div>
+								<footer class="challenge--footer">
+									<div class="challenge--tracks">
+										<span class="xp-label dev">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 30" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+												<g>
+													<path class="st0" d="M25.3,0.1c-0.5-0.3-1.1-0.1-1.4,0.4L8.3,28.4c-0.3,0.5-0.1,1.2,0.4,1.5C8.8,29.9,9,30,9.2,30
+														c0.4,0,0.7-0.2,0.9-0.5L25.7,1.6C26,1.1,25.8,0.4,25.3,0.1z"/>
+													<path class="st0" d="M7.5,7.4C7,7,6.4,7.1,6,7.5l-5.7,6.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0c0,0.1,0,0.2-0.1,0.3
+														c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0.1,0.3c0,0,0,0,0,0c0,0.1,0.1,0.2,0.2,0.3L6,21.5c0.2,0.2,0.5,0.3,0.8,0.3
+														c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1.1,0-1.5l-5.1-5.5l5.1-5.5C7.9,8.5,7.9,7.8,7.5,7.4z"/>
+													<path class="st0" d="M34,14.3c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.2-0.3L28,7.5c-0.4-0.4-1-0.4-1.5,0
+														c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.5L26.5,20c-0.4,0.4-0.4,1.1,0,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.8-0.3l5.7-6.3
+														c0.1-0.1,0.1-0.2,0.2-0.3c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0-0.1,0-0.1C34,14.4,34,14.4,34,14.3z"/>
+												</g>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label vis">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 35 35" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<defs>
+											</defs>
+											<path class="st0" d="M33.3,5.5L16.2,22.7c-0.1,0.1-0.2,0.1-0.3,0.2c0.5,1.3,0.7,2.9,0,4.4C13.3,33,0,31.9,0,31.9
+												c6.8-3.4,0.7-7.7,4.5-11.4c2.4-2.3,4.8-2.5,6.6-2.2c0.1-0.2,0.2-0.3,0.3-0.5l3.2-3.2v0l1.6-1.6h0L28.5,0.7c0.9-0.9,2.3-0.9,3.2,0
+												l1.6,1.6C34.2,3.2,34.2,4.6,33.3,5.5z M11.4,21.1c-0.4-0.4-0.5-0.8-0.6-1.3c-1-0.1-2.4,0.2-4,1.9c-2.9,2.9,0,5.7-2.3,8
+												c0,0,7.4,0.3,9.1-2.3c1-1.5,0.9-2.9,0.5-4.1c-0.4-0.1-0.8-0.3-1.1-0.6L11.4,21.1z M13.8,18.7c-0.4,0.4-0.4,1.2,0,1.6
+												c0.4,0.4,1.2,0.4,1.6,0l2.4-2.4l-1.6-1.6L13.8,18.7z M30.9,3.1c-0.4-0.4-1.2-0.4-1.6,0L17.8,14.7l1.6,1.6L30.9,4.7
+												C31.4,4.2,31.4,3.5,30.9,3.1z"/>
+											</svg>
+											+10
+										</span>
+										<span class="xp-label int">
+											<svg version="1.1"
+												 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+												 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 28 34" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+											<path class="int-path" d="M27.2,31H0.8c-1.5-2.3-0.9-7,0.6-8.5c0.7-0.7,5.9-2.1,8.4-2.8c-2.6-2.1-4.2-6.1-4.2-9.8C5.6,4.4,7.1,0,14,0
+												c6.9,0,8.4,4.4,8.4,9.9c0,3.7-1.6,7.7-4.2,9.8c2.4,0.6,7.7,2.1,8.4,2.8C28,24,28.6,28.7,27.2,31z M25.4,24.1c-1-0.5-5.1-1.7-8.6-2.6
+												v-3.1c2.3-1.7,3.7-5.2,3.7-8.5c0-4.4-1.1-8-6.5-8s-6.5,3.6-6.5,8c0,3.3,1.4,6.9,3.7,8.5v3.1c-3.5,0.9-7.6,2-8.6,2.6
+												c-0.6,0.8-1.1,3.4-0.8,5h24.3C26.5,27.5,26,24.9,25.4,24.1z"/>
+											</svg>
+											+10
+										</span>
+									</div>
+									<div class="challenge--actions">
+										<button class="challenge--toggle-complete">&check;</button>
+									</div>
+								</footer>
 							</div>
 						</div>
 					</article>
 				</div>
 			</div>
+			<!--
+			<div class="session" id="s_2">
+				<div class="content">
+					<header class="session--header">
+						<h2 class="session--title">
+							<span class="session--id">Session 2</span>
+							Duncan's Donuts
+						</h2>
+					</header>
+					<article class="session--guts">
+						<div class="session--resources">
+							<div class="session--overview">
+								<h4 class="session--resources-heading">Overview</h4>
+							</div>
+							<div class="session--links">
+								<h4 class="session--resources-heading">Links</h4>
+							</div>
+							<div class="session--downloads">
+								<h4 class="session--resources-heading">Downloads</h4>
+							</div>
+						</div>
+						<div class="challenges">
+							<div class="challenge">
+								<h3 class="challenge--title">Hacking Baby Steps <span>L1:1</span></h3>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="session" id="s_3">
+				<div class="content">
+					<header class="session--header">
+						<h2 class="session--title">
+							<span class="session--id">Session 3</span>
+							Don &amp; Rhonda's Used Hondas
+						</h2>
+					</header>
+					<article class="session--guts">
+						<div class="session--resources">
+							<div class="session--overview">
+								<h4 class="session--resources-heading">Overview</h4>
+							</div>
+							<div class="session--links">
+								<h4 class="session--resources-heading">Links</h4>
+							</div>
+							<div class="session--downloads">
+								<h4 class="session--resources-heading">Downloads</h4>
+							</div>
+						</div>
+						<div class="challenges">
+							<div class="challenge">
+								<h3 class="challenge--title">Hacking Baby Steps <span>L1:1</span></h3>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="session" id="s_4">
+				<div class="content">
+					<header class="session--header">
+						<h2 class="session--title">
+							<span class="session--id">Session 4</span>
+							Savvy Financial
+						</h2>
+					</header>
+					<article class="session--guts">
+						<div class="session--resources">
+							<div class="session--overview">
+								<h4 class="session--resources-heading">Overview</h4>
+							</div>
+							<div class="session--links">
+								<h4 class="session--resources-heading">Links</h4>
+							</div>
+							<div class="session--downloads">
+								<h4 class="session--resources-heading">Downloads</h4>
+							</div>
+						</div>
+						<div class="challenges">
+							<div class="challenge">
+								<h3 class="challenge--title">Hacking Baby Steps <span>L1:1</span></h3>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="session" id="s_5">
+				<div class="content">
+					<header class="session--header">
+						<h2 class="session--title">
+							<span class="session--id">Session 5</span>
+							Welcome to the Internet
+						</h2>
+					</header>
+					<article class="session--guts">
+						<div class="session--resources">
+							<div class="session--overview">
+								<h4 class="session--resources-heading">Overview</h4>
+							</div>
+							<div class="session--links">
+								<h4 class="session--resources-heading">Links</h4>
+							</div>
+							<div class="session--downloads">
+								<h4 class="session--resources-heading">Downloads</h4>
+							</div>
+						</div>
+						<div class="challenges">
+							<div class="challenge">
+								<h3 class="challenge--title">Hacking Baby Steps <span>L1:1</span></h3>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			-->
 		</section>
-
+		<section>
+			<div class="content">
+				<h2 id="class_info" class="site-section-heading">Class Info</h2>
+				<p>This course is broken up into five three-week-long sessions each ending with an exam. In order to pass a session, you'll need to accumulate a minimum amount of experience (XP). Earn XP by completing Challenges – exercises to be completed on your schedule, with your own resources, and using your own brain.</p>
+				<h3>Tracks</h3>
+				<p>Due to the fact that "web design" is more of an umbrella term for many various disciplines and good web designers need many different skillsets, this course will offer three Tracks: Development, Visual Design, and User Interaction. Students will choose a Track at the beginning of the semester. This choice will influence how grades are applied to Challenges.</p>
+			</div>
+		</section>
 
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script>
 		$(function(){
+			$('.session').on('click', function(e){
+				e.preventDefault();
+				var session = $(this);
+				if( session.hasClass('session--open') ) {
+					$(this).removeClass('session--open');
+				} else {
+					$(this).toggleClass('session--open');
+				}
+			});
+			$('.session--guts,.challenges,.challenge--footer').on('click', function(e){e.stopPropagation();});
 
+			$('.challenge--header').on('click', function(e){
+				e.preventDefault();
+				$(this).parents('.challenge').toggleClass('viewing');
+			});
+			$('.challenge--toggle-complete').on('click', function(e){
+				e.preventDefault();
+				$(this).toggleClass('complete');
+				$(this).parents('.challenge').toggleClass('complete');
+			});
 		});
 		</script>
 	</body>
