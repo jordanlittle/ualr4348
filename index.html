@@ -604,11 +604,11 @@
 					$(this).toggleClass('session--open');
 				}
 			});
-			$('.session--guts,.challenges,.challenge--footer').on('click', function(e){e.stopPropagation();});
+			$('.session--guts,.challenges,.challenge--guts,.challenge--toggle-complete').on('click', function(e){e.stopPropagation();});
 
-			$('.challenge--header').on('click', function(e){
+			$('.challenge').on('click', function(e){
 				e.preventDefault();
-				$(this).parents('.challenge').toggleClass('viewing');
+				$(this).toggleClass('viewing');
 			});
 			$('.challenge--toggle-complete').on('click', function(e){
 				e.preventDefault();

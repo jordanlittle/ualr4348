@@ -424,7 +424,7 @@ label {
 		}
 		@media (min-width: 62em) {
 			.session--open .content {
-				padding:0 5%%;
+				padding:0 5%;
 			}
 		}
 
@@ -549,6 +549,18 @@ label {
 			}
 		}
 
+		@media (min-width:62em) {
+			.session--overview {
+				flex-basis:56%;
+			}
+			.session--links {
+				flex-basis: 18%;
+			}
+			.session--downloads {
+				flex-basis: 18%;
+			}
+		}
+
 		.session--resources-heading {
 			font-size: 11px;
 			color: #aaa;
@@ -559,7 +571,7 @@ label {
 		}
 		.session--resources ul a {
 			display:block;
-			padding:5px 0;
+			padding:5px 10px 5px 0;
 			font-size: 12px;
 			line-height:1.4em;
 			transition:.15s ease-in-out all;
@@ -617,7 +629,14 @@ label {
 	background: #fff;
 	box-shadow:0 1px 4px rgba(0,0,0,.5);
 	margin-bottom:20px;
+	transition:.1s linear transform;
 }
+	.challenge:hover {
+		transform:translateY(-3px);
+	}
+		.challenge:hover .challenge--title {
+			text-decoration: underline;
+		}
 	.challenge.complete {
 		opacity:.75;
 		transition:.35s ease-out opacity;
@@ -629,20 +648,17 @@ label {
 	}
 	@media (min-width:62em) {
 		.challenge {
-			flex-basis:30%;
+			flex-basis:32%;
 		}
 	}
 
 	.challenge--header,
 	.challenge--footer {
-		padding:10px;
+		padding:5px 10px;
 	}
 	.challenge--header {
-		padding-top:15px;
-		padding-bottom:15px;
 		border-bottom:1px solid #eee;
 		font-size:0;
-		cursor:pointer;
 	}
 		.challenge--title,
 		.challenge--vanity-id {
@@ -669,6 +685,9 @@ label {
 		display:none;
 		transition:.15s ease-out max-height;
 	}
+		.challenge--guts p:last-child {
+			font-size: 16px;
+		}
 		.challenge--guts p:last-child {
 			margin-bottom:0;
 		}
@@ -712,14 +731,15 @@ label {
 			font-size:16px;
 			font-weight:bold;
 			color: #ddd;
-			transition:.25s ease-out all;
+			transition:.25s ease-out all,.01s linear transform;
 			outline:none;
 		}
 			.challenge--toggle-complete:hover {
-
+				border-color: #09c73f;
+				color: #09c73f;
 			}
 			.challenge--toggle-complete:active {
-
+				transform:translateY(2px);
 			}
 			.challenge--toggle-complete.complete {
 				background-color: #09c73f;
@@ -730,7 +750,7 @@ label {
 	@media (min-width:45em) {
 		.challenge--header,
 		.challenge--footer {
-			padding:20px;
+			padding:10px 20px;
 		}
 	}
 	
@@ -742,7 +762,7 @@ label {
 .xp-label {
 	display:inline-block;
 	position:relative;
-	padding:6px 10px 7px 32px;
+	padding:3px 10px 5px 30px;
 	color: #fff;
 	font-size: 13px;
 	border-radius:50px;
@@ -757,8 +777,8 @@ label {
 		vertical-align: middle;
 	}
 	.xp-label svg {
-		width:18px;
-		height:18px;
+		width:16px;
+		height:16px;
 		position:absolute;
 		top:50%;
 		left:8px;
